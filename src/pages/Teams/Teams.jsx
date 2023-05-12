@@ -14,6 +14,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay'
+import { FaPlus } from 'react-icons/fa';
 
 
 // import img1 from '../../assets/image/banner/1.jpg'
@@ -40,7 +41,7 @@ const Teams = () => {
 
 
     return (
-        <div className='mt-24 '>
+        <div className='mt-32'>
             <div className='relative'>
                 <img className='max-h-screen w-full' src={img1} alt="" />
                 <div className='absolute flex-col text-center left-0 top-0 bg-gradient-to-r from-[#017f7f89] to-[#017f7f89] h-full w-full'>
@@ -53,7 +54,7 @@ const Teams = () => {
             </div>
 
 
-            <div className='relative -top-96 mx-10'>
+            <div className='relative -top-96 mx-10 '>
                 <Swiper
                     className='mt-32'
                     // install Swiper modules
@@ -81,6 +82,9 @@ const Teams = () => {
                 </Swiper>
 
             </div>
+
+
+            <p className='relative -top-[370px] mx-10 text-[#017f7f] font-semibold  flex items-center justify-end cursor-pointer'>Add Member <FaPlus className='ml-3'></FaPlus></p>
         </div>
     );
 };

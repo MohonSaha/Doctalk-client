@@ -1,15 +1,22 @@
-// import React from 'react';
+import React from 'react';
 
-// const ClientReviewCard = ({disease}) => {
+const ClientReviewCard = ({ disease }) => {
 
-//     const { diseases_id, title, img, description } = disease;
+    const { diseases_id, title, img, description } = disease;
 
 
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// };
+    return (
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <figure><img className='rounded-full w-32 h-32' src={img} alt="Shoes" /></figure>
+                <div className="card-body items-center text-center">
+                    <h2 className="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div className="card-actions justify-end">
+                        <button className="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+    );
+};
 
-// export default ClientReviewCard;
+export default ClientReviewCard;
