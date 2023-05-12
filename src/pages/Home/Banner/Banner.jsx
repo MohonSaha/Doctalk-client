@@ -2,11 +2,12 @@ import React from 'react';
 import img1 from '../../../assets/image/banner/1.jpg'
 import img2 from '../../../assets/image/banner/2.jpg'
 import img3 from '../../../assets/image/banner/3.jpg'
+import { FaBeer, FaPlus } from 'react-icons/fa';
 
 const Banner = () => {
     return (
         <div>
-            <div className="carousel w-full absolute top-0 h-[800px]">
+            <div className="carousel w-full relative -top-28 h-[800px]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src={img1} className="w-full" />
 
@@ -16,8 +17,8 @@ const Banner = () => {
                             <h3 className='text-xl font-bold mb-6'>Markets & Resource</h3>
                             <h2 className='text-7xl font-bold mb-28'>Find The Best <br />Doctor Near By You.</h2>
                             <div>
-                                <button className="text-white btn bg-[#09c3d0] border-[#09c3d0] mr-5">Discover More</button>
-                                <button className="btn text-white btn-outline border-[#FFFFFF]">Latest Project</button>
+                                <button className="text-white btn bg-[#09c3d0] border-[#09c3d0] mr-5">FIND A DOCTOR <FaPlus className='ml-3'></FaPlus> </button>
+                                <button className="btn text-white btn-outline border-[#FFFFFF]">READ MORRE <FaPlus className='ml-3'></FaPlus></button>
 
                             </div>
                         </div>
@@ -28,8 +29,8 @@ const Banner = () => {
 
 
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
+                        <a href="#slide4" className="btn btn-square bg-[#09c3d0] border-[#09c3d0]">❮</a>
+                        <a href="#slide2" className="btn btn-square bg-[#09c3d0] border-[#09c3d0]">❯</a>
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
