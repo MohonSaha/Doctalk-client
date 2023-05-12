@@ -17,6 +17,7 @@ export default {
           neutral: "#3d4451",
           special: "#80E5E5",
           info: '#09c3d0',
+          docTalk2: '#017f7f89',
           "base-100": "#ffffff",
         },
       },
