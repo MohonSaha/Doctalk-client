@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
 import logo from '../../../assets/logos/healthcare.png'
+import { FaArrowRight, FaSearch } from "react-icons/fa";
 
 
 const Navbar = () => {
 
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/about'>Service</Link></li>
+        <li><Link to='/about'>My Appoinment</Link></li>
+        <li><Link to='/about'>Services</Link></li>
+        <li><Link to='/login'>Login</Link></li>
 
     </>
 
 
     return (
         <div>
-            <div className="navbar bg-[#10888890] h-18 mb-4 px-12 z-10 relative">
+            <div className="navbar bg-[#10888890] h-18 mb-4 px-2 md:px-12 z-10 relative">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -27,7 +29,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to='/' className="flex items-center">
-                        <img src={logo} className="w-12" alt="" /> <span className="text-3xl font-bold text-white font-serif">Doctalk</span>
+                        <img src={logo} className="w-12" alt="" /> <span className="text-3xl font-bold text-white font-serif ml-4">Doctalk</span>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -38,7 +40,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn text-white btn-info">APPOINTMENT</button>
+                    <FaSearch className="text-white mr-4"></FaSearch>
+                    <button className="btn text-white btn-info">APPOINTMENT <FaArrowRight className="ml-4"></FaArrowRight></button>
                 </div>
             </div>
         </div>
