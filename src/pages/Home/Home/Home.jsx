@@ -4,6 +4,7 @@ import Search from '../Search/Search';
 import Diseases from '../Diseases/Diseases';
 import Teams from '../../Teams/Teams';
 import Test from '../../Teams/test';
+import Footer from '../../Shared/Footer/Footer';
 // import ClientReview from '../ClientReview/ClientReview';
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
             <Diseases></Diseases>
             <Teams></Teams>
             {/* <ClientReview></ClientReview> */}
-            {/* <Test></Test> */}
+            <Footer></Footer>
         </div>
     );
 };
