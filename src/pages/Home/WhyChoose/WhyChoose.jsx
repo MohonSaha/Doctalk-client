@@ -9,7 +9,7 @@ const WhyChoose = () => {
         <div className='mb-36'>
             <div className='relative'>
                 <img className='max-h-[760px] w-full' src={dna} alt="" />
-                <div className='absolute flex pt-20 left-0 top-0 bg-gradient-to-r from-[#017777b4] to-[#017777b4] h-full w-full px-24 space-x-8'>
+                <div className='absolute flex flex-col md:flex-row pt-20 left-0 top-0 bg-gradient-to-r from-[#017777b4] to-[#017777b4] h-full w-full px-24 space-x-8'>
 
                     <div className='mt-6 w-1/2'>
                         <h1 className='font-bold text-6xl text-white'>Why Choose Doctalk Clinic?</h1>

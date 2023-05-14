@@ -6,18 +6,20 @@ import Teams from '../../Teams/Teams';
 import ClientReview from '../ClientReview/ClientReview';
 import Subscribe from '../Subscribe/Subscribe';
 import WhyChoose from '../WhyChoose/WhyChoose';
+import Statistics from '../Statistics/Statistics';
 
 const Home = () => {
     return (
         <div>
             <h2>I am home</h2>
             <Banner></Banner>
-            <Search></Search>
+            {/* <Search></Search>
             <Diseases></Diseases>
             <Teams></Teams>
             <Subscribe></Subscribe>
             <WhyChoose></WhyChoose>
-            <ClientReview></ClientReview>
+            <Statistics></Statistics>
+            <ClientReview></ClientReview> */}
            
         </div>
     );

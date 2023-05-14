@@ -67,13 +67,14 @@ const Teams = () => {
                         disableOnInteraction: false,
                     }}
                     // pagination={{ clickable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log()}
+                    onSlideChange={() => console.log()}
                 >
 
 
                     {
                         diseases.map(disease => <SwiperSlide><TeamCard
+                        key={disease.diseases_id}
                             disease={disease}
                         ></TeamCard></SwiperSlide>)
                     }

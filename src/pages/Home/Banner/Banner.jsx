@@ -7,18 +7,18 @@ import { FaBeer, FaPlus } from 'react-icons/fa';
 const Banner = () => {
     return (
         <div>
-            <div className="carousel w-full relative -top-28 h-[800px]">
+            <div className="carousel w-full relative -top-28 h-[600px] md:h-[800px]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src={img1} className="w-full" />
 
                     <div className="absolute flex items-center left-0 top-0 bg-gradient-to-r from-[#017f7f89] to-[#017f7f89] h-full w-full">
 
-                        <div className='text-white pl-12 w-full text-center'>
-                            <h3 className='text-xl font-bold mb-6'>Markets & Resource</h3>
-                            <h2 className='text-7xl font-bold mb-28'>Find The Best <br />Doctor Near By You.</h2>
+                        <div className='text-white w-full text-center'>
+                            <h3 className='md:text-xl font-bold mb-6'>Markets & Resource</h3>
+                            <h2 className='text-2xl md:text-7xl  font-bold mb-28'>Find The Best <br />Doctor Near By You.</h2>
                             <div>
                                 <button className="text-white btn bg-[#09c3d0] border-[#09c3d0] mr-5">FIND A DOCTOR <FaPlus className='ml-3'></FaPlus> </button>
-                                <button className="btn text-white btn-outline border-[#FFFFFF]">READ MORRE <FaPlus className='ml-3'></FaPlus></button>
+                                <button className="btn text-white btn-outline border-[#FFFFFF]">READ MORE <FaPlus className='ml-3'></FaPlus></button>
 
                             </div>
                         </div>

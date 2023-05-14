@@ -48,7 +48,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to='/' className="flex items-center">
-                        <img src={logo} className="w-12" alt="" /> <span className="text-3xl font-bold text-white font-serif ml-4">Doctalk</span>
+                        <img src={logo} className="md:w-12 w-8" alt="" /> <span className="md:text-3xl text-2xl font-bold text-white font-serif md:ml-4 ml-2">Doctalk</span>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <FaSearch className="text-white mr-4"></FaSearch>
-                    <button className="btn text-white btn-info">APPOINTMENT <FaArrowRight className="ml-4"></FaArrowRight></button>
+                    <button className="btn text-white btn-info hidden md:flex">APPOINTMENT <FaArrowRight className="md:ml-4 ml-1"></FaArrowRight></button>
                 </div>
             </div>
         </div>
