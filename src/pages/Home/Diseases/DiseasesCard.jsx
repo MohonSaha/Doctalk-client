@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaEllipsisH } from 'react-icons/fa';
 import { authContext } from '../../../providers/AuthProviders';
+import { Link } from 'react-router-dom';
 
 const DiseasesCard = ({ disease, handleDelete }) => {
 
-    const {user} = useContext(authContext);
-    const {_id, name, photo, details } = disease;
+    const { user } = useContext(authContext);
+    const { _id, name, photo, details } = disease;
 
 
 
@@ -24,14 +25,29 @@ const DiseasesCard = ({ disease, handleDelete }) => {
                     <p>
                         {
                             details.length > 50 ?
-                                 details.slice(0, 200) + '...' : details
+                                details.slice(0, 200) + '...' : details
                         }
                     </p>
-                    <div className="card-actions flex justify-between">
+                    <div className="card-actions flex justify-between items-center mt-4">
                         <span className='flex font-bold cursor-pointer items-center text-[#09c3d0]'>Read More <FaArrowRight className='ml-3'></FaArrowRight></span>
-                        
-                             <span onClick={() => handleDelete(_id)} className='font-bold cursor-pointer text-red-500'>Remove</span>
-                        
+
+
+
+                        <div className="dropdown dropdown-top dropdown-end">
+                            <label tabIndex={0} className=" m-1"><FaEllipsisH className='text-[#09c3d0]'></FaEllipsisH></label>
+                            <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-[#017f7f] rounded-box w-52">
+
+                                <li className='text-white'>
+                                    <span onClick={() => handleDelete(_id)} className='font-semibold cursor-pointer'><Link>Edit</Link></span>
+                                </li>
+
+                                <li className='text-white'>
+                                    <span onClick={() => handleDelete(_id)} className='font-semibold cursor-pointer'>Remove</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
