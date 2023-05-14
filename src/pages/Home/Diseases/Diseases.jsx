@@ -17,7 +17,7 @@ const Diseases = () => {
         <div>
             <div className='text-center mb-16 -mt-12'>
                 <h3 className='font-bold text-xl text-info'>What We do</h3>
-                <h1 className='font-bold text-6xl text-[#017f7f]'>Our Services</h1>
+                <h1 className='font-bold md:text-6xl text-5xl text-[#017f7f]'>Our Services</h1>
             </div>
 
             <div className='flex justify-between mx-6 md:mx-28 mb-6'>
