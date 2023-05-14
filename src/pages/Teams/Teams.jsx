@@ -4,7 +4,7 @@ import TeamCard from './TeamCard';
 
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Virtual } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
@@ -17,9 +17,6 @@ import 'swiper/css/autoplay'
 import { FaPlus } from 'react-icons/fa';
 
 
-// import img1 from '../../assets/image/banner/1.jpg'
-// import img2 from '../../assets/image/banner/2.jpg'
-// import img3 from '../../assets/image/banner/3.jpg'
 
 
 
@@ -43,22 +40,22 @@ const Teams = () => {
     return (
         <div className='mt-32'>
             <div className='relative'>
-                <img className='max-h-screen w-full' src={img1} alt="" />
+                <img className='md:h-[800px] h-[500px] w-full' src={img1} alt="" />
                 <div className='absolute flex-col text-center left-0 top-0 bg-gradient-to-r from-[#017f7f89] to-[#017f7f89] h-full w-full'>
 
-                    <div className='mt-24'>
+                    <div className='md:mt-24 mt-12'>
                         <h3 className='font-bold text-xl text-white'>Meet Out Team</h3>
-                        <h1 className='font-bold text-6xl text-white'>Our Creative Team</h1>
+                        <h1 className='font-bold md:text-6xl text-5xl text-white'>Our Creative Team</h1>
                     </div>
                 </div>
             </div>
 
 
-            <div className='relative -top-96 mx-10 '>
+            <div className='relative md:-top-96 -top-80 md:mx-10'>
                 <Swiper
                     className='mt-32'
                     // install Swiper modules
-                    modules={[Navigation, Pagination, A11y, Autoplay]}
+                    modules={[Navigation, Pagination, A11y, Autoplay, Virtual]}
                     spaceBetween={50}
                     slidesPerView={3}
                     // navigation
