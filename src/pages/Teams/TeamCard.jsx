@@ -3,11 +3,6 @@ import { FaArrowRight } from 'react-icons/fa';
 import { SwiperSlide } from 'swiper/react';
 
 
-
-
-
-
-
 const TeamCard = ({ disease }) => {
 
 
@@ -16,7 +11,7 @@ const TeamCard = ({ disease }) => {
 
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-2xl">
+            <div className="card w-full bg-base-100 shadow-2xl">
                 <figure><img src={img} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title text-[#017f7f]">{title}</h2>

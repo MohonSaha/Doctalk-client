@@ -51,16 +51,38 @@ const Teams = () => {
             </div>
 
 
-            <div className='relative md:-top-96 -top-80 md:mx-10'>
+            <div className='relative -top-[365px] md:mx-10 mx-4'>
                 <Swiper
                     className='mt-32'
                     // install Swiper modules
                     modules={[Navigation, Pagination, A11y, Autoplay, Virtual]}
                     spaceBetween={50}
-                    slidesPerView={3}
+                    // slidesPerView={3}
+                    // slidesPerView = {'auto'}
+
+                    breakpoints={{
+                        // when window width is >= 640px
+                        576: {
+                            width: 640,
+                            slidesPerView: 1,
+                        },
+                        // when window width is >= 768px
+                        768: {
+                            width: 768,
+                            slidesPerView: 2,
+                        },
+                        // when window width is >= 992px
+                        // 992: {
+                        //     width: 992,
+                        //     slidesPerView: 3,
+                        // },
+                    }}
+
+
+
                     // navigation
                     autoplay={{
-                        delay: 3000,
+                        delay: 2500,
                         disableOnInteraction: false,
                     }}
                     // pagination={{ clickable: true }}
@@ -71,7 +93,7 @@ const Teams = () => {
 
                     {
                         diseases.map(disease => <SwiperSlide><TeamCard
-                        key={disease.diseases_id}
+                            key={disease.diseases_id}
                             disease={disease}
                         ></TeamCard></SwiperSlide>)
                     }
