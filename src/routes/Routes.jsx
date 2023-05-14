@@ -4,6 +4,8 @@ import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/Login/Signup";
 import Appoinments from "../pages/Appoinments/Appoinments";
+import AddDiseases from "../pages/Shared/AddServices/AddServices";
+import AddServices from "../pages/Shared/AddServices/AddServices";
 
 
 const router = createBrowserRouter([
@@ -26,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: 'appoinment',
         element: <Appoinments></Appoinments>
+      },
+      {
+        path: '/addDiseases',
+        element: <AddServices></AddServices>
       }
     ]
   },

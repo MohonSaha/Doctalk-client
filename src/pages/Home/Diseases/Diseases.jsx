@@ -1,16 +1,49 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import DiseasesCard from './DiseasesCard';
 import { FaArrowRight, FaPlus } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
+import { authContext } from '../../../providers/AuthProviders';
+import { stateContext } from '../../../providers/StateChange';
 
 const Diseases = () => {
-    const [diseases, setDideases] = useState([])
+
+    
+    const [diseases, setDideases] = useState([]);
+    const {user} = useContext(authContext);
+    // const [control, setControl] = useState(false)
+    const {control, setControl} = useContext(stateContext);
+    const navigate = useNavigate()
+
+
+    const handleDelete = (id) =>{
+        if(!user){
+            navigate('/login')
+        }
+
+        fetch(`http://localhost:5000/remove/${id}`, {
+            method: "DELETE", 
+            headers: {
+                "content-type" : "application/json"
+            }
+        })
+        .then(res=> res.json())
+        .then(data => {
+            if(data?.deletedCount > 0){
+                setControl(!control)
+            };
+        })
+    }
+
+
     useEffect(() => {
-        fetch('diseases.json')
+        fetch('http://localhost:5000/allServices')
             .then(res => res.json())
             .then(data => {
                 setDideases(data)
             })
-    }, [])
+    }, [control])
+
+
 
 
     return (
@@ -22,7 +55,7 @@ const Diseases = () => {
 
             <div className='flex justify-between mx-6 md:mx-28 mb-6'>
 
-                <p  className=' text-[#017f7f] font-semibold  flex items-center cursor-pointer'>Add Services <FaPlus className='ml-3'></FaPlus></p>
+                <p  className=' text-[#017f7f] font-semibold  cursor-pointer'><Link className='flex items-center' to='/addDiseases'>Add Services <FaPlus className='ml-3'></FaPlus></Link></p>
 
                 <p className=' text-[#017f7f] font-semibold  flex items-center cursor-pointer'>Swipe Right <FaArrowRight className='ml-3'></FaArrowRight></p>
 
@@ -32,8 +65,9 @@ const Diseases = () => {
             <div className="carousel carousel-center rounded-box md:mx-28 mx-6">
                 {
                     diseases.map(disease => <DiseasesCard
-                        key={disease.diseases_id}
+                        key={disease._id}
                         disease={disease}
+                        handleDelete={handleDelete}
                     ></DiseasesCard>)
                 }
             </div>

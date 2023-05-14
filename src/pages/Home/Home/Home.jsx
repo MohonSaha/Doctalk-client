@@ -11,7 +11,6 @@ import Statistics from '../Statistics/Statistics';
 const Home = () => {
     return (
         <div>
-            <h2>I am home</h2>
             <Banner></Banner>
             <Search></Search>
             <Diseases></Diseases>
