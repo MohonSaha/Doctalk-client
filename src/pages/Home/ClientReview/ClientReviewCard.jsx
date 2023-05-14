@@ -7,11 +7,11 @@ const ClientReviewCard = ({ disease }) => {
 
 
     return (
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-full bg-base-100 shadow-xl">
                 <figure><img className='rounded-full w-32 h-32' src={img} alt="Shoes" /></figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <h2 className="card-title">Name</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus aut, obcaecati quidem esse nulla quis.</p>
                     <div className="card-actions justify-around w-2/3 mt-8">
                         <button className="text-white btn bg-[#017f7f] border-[#017f7f]"><FaEdit></FaEdit></button>
                         <button className="text-white btn bg-[#017f7f] border-[#017f7f]"><FaTrash></FaTrash> </button>

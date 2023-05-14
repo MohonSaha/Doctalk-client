@@ -19,7 +19,7 @@ const Home = () => {
             <Subscribe></Subscribe>
             <WhyChoose></WhyChoose>
             <Statistics></Statistics>
-            {/* <ClientReview></ClientReview> */}
+            <ClientReview></ClientReview>
            
         </div>
     );

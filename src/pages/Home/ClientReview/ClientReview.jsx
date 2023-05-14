@@ -15,14 +15,14 @@ const ClientReview = () => {
 
 
     return (
-        <div className=' mb-32'>
+        <div className='mb-32 w-full'>
 
             <div className='text-center mb-16'>
                 <h3 className='font-bold text-xl text-info'>Client Testimonials</h3>
-                <h1 className='font-bold text-6xl text-[#017f7f]'>What Our Clients Say</h1>
+                <h1 className='font-bold md:text-6xl text-5xl px-5 text-[#017f7f]'>What Our Clients Say</h1>
             </div>
 
-            <div className='grid md:grid-cols-3 grid-cols-1 mx-10 gap-10'>
+            <div className='grid px-10 md:grid-cols-3 grid-cols-1 md:mx-10 gap-10'>
                 {
 
                     diseases.map(disease => <ClientReviewCard
