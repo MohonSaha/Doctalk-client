@@ -29,7 +29,12 @@ const DiseasesCard = ({ disease, handleDelete }) => {
                         }
                     </p>
                     <div className="card-actions flex justify-between items-center mt-4">
-                        <span className='flex font-bold cursor-pointer items-center text-[#09c3d0]'>Read More <FaArrowRight className='ml-3'></FaArrowRight></span>
+                        <span className='font-bold cursor-pointer  text-[#09c3d0]'>
+                            <Link className='flex items-center' to={`/servicesDetails/${_id}`}>
+                                Read More
+                                <FaArrowRight className='ml-2 -mb-1'></FaArrowRight>
+                            </Link>
+                        </span>
 
 
 
@@ -38,7 +43,7 @@ const DiseasesCard = ({ disease, handleDelete }) => {
                             <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-[#017f7f] rounded-box w-52">
 
                                 <li className='text-white'>
-                                    <span onClick={() => handleDelete(_id)} className='font-semibold cursor-pointer'><Link>Edit</Link></span>
+                                    <span className='font-semibold cursor-pointer'><Link className='w-full' to={`/services/${_id}`}>Edit</Link></span>
                                 </li>
 
                                 <li className='text-white'>

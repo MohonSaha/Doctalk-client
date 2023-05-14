@@ -6,6 +6,8 @@ import SignUp from "../pages/Login/Signup";
 import Appoinments from "../pages/Appoinments/Appoinments";
 import AddDiseases from "../pages/Shared/AddServices/AddServices";
 import AddServices from "../pages/Shared/AddServices/AddServices";
+import EditServices from "../pages/Shared/EditServices/EditServices";
+import ServiceDetails from "../pages/Shared/ServiceDetails/ServiceDetails";
 
 
 const router = createBrowserRouter([
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: '/addDiseases',
         element: <AddServices></AddServices>
+      },
+      {
+        path: '/services/:id',
+        element: <EditServices></EditServices>
+      },
+      {
+        path: '/servicesDetails/:id',
+        element: <ServiceDetails></ServiceDetails>
       }
     ]
   },
