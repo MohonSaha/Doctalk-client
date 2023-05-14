@@ -8,7 +8,7 @@ const WhyChoose = () => {
     return (
         <div className='mb-36'>
             <div className='relative'>
-                <img className='h-[760px] w-full' src={dna} alt="" />
+                <img className='md:h-[760px] h-[900px] w-full' src={dna} alt="" />
                 <div className='absolute flex flex-col md:flex-row pt-4 md:pt-20 left-0 top-0 bg-gradient-to-r from-[#017777b4] to-[#017777b4] h-full w-full md:px-24 px-4 space-x-8 space-y-10 md:space-y-0'>
 
                     <div className='mt-6 md:w-1/2'>

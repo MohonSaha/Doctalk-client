@@ -18,8 +18,8 @@ const Home = () => {
             <Teams></Teams>
             <Subscribe></Subscribe>
             <WhyChoose></WhyChoose>
-            {/* <Statistics></Statistics>
-            <ClientReview></ClientReview> */}
+            <Statistics></Statistics>
+            {/* <ClientReview></ClientReview> */}
            
         </div>
     );

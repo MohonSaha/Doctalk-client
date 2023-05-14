@@ -15,7 +15,7 @@ const Statistics = () => {
 
     return (
         <div className='relative -top-64 w-3/4 mx-auto'>
-            <div className="form-control h-48 bg-[#09c3d0] shadow-xl rounded-lg ">
+            <div className="form-control md:h-48 h-fit bg-[#09c3d0] shadow-xl rounded-lg ">
                 <div className='flex flex-col items-center h-full md:flex-row justify-around '>
                     {
                         statistics.map(statistic => <StaCard

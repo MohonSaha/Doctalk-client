@@ -6,7 +6,7 @@ const StaCard = ({statistic}) => {
     console.log(title);
 
     return (
-        <div>
+        <div className='my-10 md:my-0'>
             <h1 className='text-5xl font-bold text-white'>{number}+</h1>
             <h2 className='tetx-2xl font-bold mt-2 text-white'>{title}</h2>
         </div>
