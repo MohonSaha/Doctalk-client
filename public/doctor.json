@@ -5,15 +5,17 @@
         "speciality": "Medicine Specialist",
         "degree": "MBBS (DMC), FCPS (Medicine), MD (Internal Medicine), FACP (USA",
         "work_place" : "Dhaka Medical College & Hospital",
-        "rating": 5.2
+        "rating": 5.2,
+        "First_fee": 500,
+        "fee": 300
         
     },
     {
-        "name": "Dr. Mohammad Safayet Kamal",
-        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Mohammad-Safayet-Kamal.jpg",
+        "name": "Dr. Munira Afroz Siddika",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Munira-Afroz-Siddika.jpg",
         "speciality": "Medicine Specialist",
-        "degree": "MBBS, BCS (Health), FCPS (Medicine), MACP (USA)",
-        "work_place" : "National Institute of Neurosciences & Hospital",
+        "degree": "MBBS (DMC), FCPS (Medicine)",
+        "work_place" : "National Institute of Diseases of the Chest & Hospital",
         "rating": 4.5
         
     },
@@ -72,15 +74,6 @@
         
     },
     {
-        "name": "Dr. Munira Afroz Siddika",
-        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Munira-Afroz-Siddika.jpg",
-        "speciality": "Medicine Specialist",
-        "degree": "MBBS (DMC), FCPS (Medicine)",
-        "work_place" : "National Institute of Diseases of the Chest & Hospital",
-        "rating": 4.5
-        
-    },
-    {
         "name": "Dr. Tazin Afrose Shah",
         "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Tazin-Afrose-Shah.jpg",
         "speciality": "Medicine Specialist",
@@ -104,7 +97,15 @@
         "speciality": "Rheumatology & Medicine Specialist",
         "degree": "MBBS, FCPS (Medicine), MRCP (UK), MD (Rheumatology)",
         "work_place" : "Square Hospital, Dhaka",
-        "rating": 2.8
+        "rating": 2.8       
+    },
+    {
+        "name": "Dr. Mohammad Safayet Kamal",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Mohammad-Safayet-Kamal.jpg",
+        "speciality": "Medicine Specialist",
+        "degree": "MBBS, BCS (Health), FCPS (Medicine), MACP (USA)",
+        "work_place" : "National Institute of Neurosciences & Hospital",
+        "rating": 4.5
         
     }
 ]
