@@ -44,8 +44,6 @@ const Diseases = () => {
     }, [control])
 
 
-
-
     return (
         <div>
             <div className='text-center mb-16 -mt-12'>
