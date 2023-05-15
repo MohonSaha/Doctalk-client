@@ -36,7 +36,7 @@ const Doctors = () => {
             })
     }, [])
 
-    const options = [4, 6, 8];
+    const options = [2, 4, 6, 8];
     function handleSelectChange(event) {
         setDoctorPerPage(parseInt(event.target.value))
         setCurentPage(0)
@@ -75,13 +75,13 @@ const Doctors = () => {
                 <div className="pagination text-end mx-6 md:mx-28 mt-6">
                     <p><small>Current Page: {currentPage}</small></p>
                     {
-                        pageNumbers.map(number => <button className='btn bg-white ml-3 text-black' 
+                        pageNumbers.map(number => <button className={`btn bg-white ml-3 text-black ${currentPage === number ? "bg-red-500": ''}`} 
                         key={number}
                         onClick={() => setCurentPage(number)}
                         >{number}</button>)
                     }
 
-                    <select value={doctorPerPage} onChange={handleSelectChange}>
+                    <select className='ml-4' value={doctorPerPage} onChange={handleSelectChange}>
                         {
                             options.map(option => (
                                 <option key={option} value={option}>
