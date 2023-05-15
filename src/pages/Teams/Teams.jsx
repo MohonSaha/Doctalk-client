@@ -27,7 +27,7 @@ const Teams = () => {
 
     const [diseases, setDideases] = useState([])
     useEffect(() => {
-        fetch('diseases.json')
+        fetch('http://localhost:5000/allServices')
             .then(res => res.json())
             .then(data => {
                 setDideases(data)

@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Prof. Dr. Khan Abul Kalam Azad",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Prof.-Dr.-Khan-Abul-Kalam-Azad.jpg",
+        "speciality": "Medicine Specialist",
+        "degree": "MBBS (DMC), FCPS (Medicine), MD (Internal Medicine), FACP (USA",
+        "work_place" : "Dhaka Medical College & Hospital",
+        "rating": 5.2
+        
+    },
+    {
+        "name": "Dr. Mohammad Safayet Kamal",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Mohammad-Safayet-Kamal.jpg",
+        "speciality": "Medicine Specialist",
+        "degree": "MBBS, BCS (Health), FCPS (Medicine), MACP (USA)",
+        "work_place" : "National Institute of Neurosciences & Hospital",
+        "rating": 4.5
+        
+    },
+    {
+        "name": "Prof. Dr. Baren Chakraborty",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Prof.-Dr.-Baren-Chakraborty.jpg",
+        "speciality": "Cardiology & Medicine Specialist",
+        "degree": "MBBS, MCPS, FCPS (Medicine), FACA (USA), FCCP (USA), FACC (USA), FRCP (UK)",
+        "work_place" : "Labaid Specialized Hospital, Dhanmondi",
+        "rating": 4
+        
+    },
+    {
+        "name": "Prof. Dr. Mohammad Zahiruddin",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Prof.-Dr.-Mohammad-Zahiruddin.jpg",
+        "speciality": "Medicine, Chest Diseases, Rheumatology & Diabetes Specialist",
+        "degree": "MBBS, FCPS (Medicine), MD (Internal Medicine), FACP (USA), FRCP (UK)",
+        "work_place" : "Sir Salimullah Medical College & Mitford Hospital",
+        "rating": 5
+        
+    },
+    {
+        "name": "Dr. Maimuna Sultana",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Maimuna-Sultana.jpg",
+        "speciality": "Medicine, Cardiology & Diabetes Specialist",
+        "degree": "MBBS, BCS (Health), FCPS (Medicine), MD (Cardiology), CCD (BIRDEM)",
+        "work_place" : "Kurmitola General Hospital, Dhaka",
+        "rating": 3
+        
+    },
+    {
+        "name": "Dr. Mohammad Liakat Ali",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Mohammad-Liakat-Ali-Liton.jpg",
+        "speciality": "Medicine Specialist",
+        "degree": "MBBS, FCPS (Medicine)",
+        "work_place" : "Uttara Adhunik Medical College & Hospital",
+        "rating": 3.7
+        
+    },
+    {
+        "name": "Dr. Mohammad Liakat Ali",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Mohammad-Liakat-Ali-Liton.jpg",
+        "speciality": "Medicine Specialist",
+        "degree": "MBBS, FCPS (Medicine)",
+        "work_place" : "Uttara Adhunik Medical College & Hospital",
+        "rating": 3.7
+        
+    },
+    {
+        "name": "Dr. Aparna Das",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Aparna-Das.jpg",
+        "speciality": "Internal, Medicine & Diabetes Specialist",
+        "degree": "MBBS, FCPS (Medicine), Md. (Internal Medicine), DEM (Birdem)",
+        "work_place" : "Dhaka Medical College & Hospital",
+        "rating": 3.7
+        
+    },
+    {
+        "name": "Dr. Munira Afroz Siddika",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Munira-Afroz-Siddika.jpg",
+        "speciality": "Medicine Specialist",
+        "degree": "MBBS (DMC), FCPS (Medicine)",
+        "work_place" : "National Institute of Diseases of the Chest & Hospital",
+        "rating": 4.5
+        
+    },
+    {
+        "name": "Dr. Tazin Afrose Shah",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Tazin-Afrose-Shah.jpg",
+        "speciality": "Medicine Specialist",
+        "degree": "MBBS, FCPS (Medicine), FRCP (EDIN), FRCP (Glasgow)",
+        "work_place" : "Uttara Adhunik Medical College & Hospital",
+        "rating": 5
+        
+    },
+    {
+        "name": "Dr. Borhan Uddin Ahmad",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Borhan-Uddin-Ahmad.jpg",
+        "speciality": "Medicine (All Diseases of Adults) Specialist",
+        "degree": "MBBS (DMC), MRCP (UK)",
+        "work_place" : "Evercare Hospital, Dhaka",
+        "rating": 3
+        
+    },
+    {
+        "name": "Dr. Farzana Shumy",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/Dr.-Farzana-Shumy.jpg",
+        "speciality": "Rheumatology & Medicine Specialist",
+        "degree": "MBBS, FCPS (Medicine), MRCP (UK), MD (Rheumatology)",
+        "work_place" : "Square Hospital, Dhaka",
+        "rating": 2.8
+        
+    }
+]

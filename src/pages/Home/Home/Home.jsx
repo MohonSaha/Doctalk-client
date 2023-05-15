@@ -7,12 +7,14 @@ import ClientReview from '../ClientReview/ClientReview';
 import Subscribe from '../Subscribe/Subscribe';
 import WhyChoose from '../WhyChoose/WhyChoose';
 import Statistics from '../Statistics/Statistics';
+import Doctors from '../../Shared/Doctors/Doctors';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
             <Search></Search>
+            <Doctors></Doctors>
             <Diseases></Diseases>
             <Teams></Teams>
             <Subscribe></Subscribe>
