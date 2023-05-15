@@ -7,9 +7,13 @@ const Doctors = () => {
 
     const [currentPage, setCurentPage] = useState(0);
     const [totalDoctors, setTotalDoctors] = useState(null)
-    const doctorPerPage = 4;
+    const [doctorPerPage, setDoctorPerPage] = useState(4);
     const totalPages = Math.ceil(totalDoctors / doctorPerPage);
     const pageNumbers = [...Array(totalPages).keys()]
+   
+
+
+
 
     useEffect(() => {
         fetch('http://localhost:5000/totalDoctors')
@@ -32,7 +36,11 @@ const Doctors = () => {
             })
     }, [])
 
-    console.log(doctors);
+    const options = [4, 6, 8];
+    function handleSelectChange(event) {
+        setDoctorPerPage(parseInt(event.target.value))
+        setCurentPage(0)
+    }
 
 
     return (
@@ -72,6 +80,16 @@ const Doctors = () => {
                         onClick={() => setCurentPage(number)}
                         >{number}</button>)
                     }
+
+                    <select value={doctorPerPage} onChange={handleSelectChange}>
+                        {
+                            options.map(option => (
+                                <option key={option} value={option}>
+                                    {option}
+                                </option>
+                            ))
+                        }
+                    </select>
                 </div>
             </div>
 
