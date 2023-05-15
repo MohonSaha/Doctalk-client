@@ -6,6 +6,7 @@
         "degree": "MBBS (DMC), FCPS (Medicine), MD (Internal Medicine), FACP (USA",
         "work_place" : "Dhaka Medical College & Hospital",
         "rating": 5.2,
+        "working_hour" : "3-8 Pm",
         "First_fee": 500,
         "fee": 300
         
@@ -16,7 +17,10 @@
         "speciality": "Medicine Specialist",
         "degree": "MBBS (DMC), FCPS (Medicine)",
         "work_place" : "National Institute of Diseases of the Chest & Hospital",
-        "rating": 4.5
+        "rating": 4.5,
+        "working_hour" : "5-8 Pm",
+        "First_fee": 800,
+        "fee": 500
         
     },
     {
@@ -25,7 +29,10 @@
         "speciality": "Cardiology & Medicine Specialist",
         "degree": "MBBS, MCPS, FCPS (Medicine), FACA (USA), FCCP (USA), FACC (USA), FRCP (UK)",
         "work_place" : "Labaid Specialized Hospital, Dhanmondi",
-        "rating": 4
+        "rating": 4,
+        "working_hour" : "12-5 Pm",
+        "First_fee": 1000,
+        "fee": 700
         
     },
     {
@@ -34,7 +41,10 @@
         "speciality": "Medicine, Chest Diseases, Rheumatology & Diabetes Specialist",
         "degree": "MBBS, FCPS (Medicine), MD (Internal Medicine), FACP (USA), FRCP (UK)",
         "work_place" : "Sir Salimullah Medical College & Mitford Hospital",
-        "rating": 5
+        "rating": 5,
+        "working_hour" : "3-8 Pm",
+        "First_fee": 700,
+        "fee": 400
         
     },
     {
@@ -43,7 +53,10 @@
         "speciality": "Medicine, Cardiology & Diabetes Specialist",
         "degree": "MBBS, BCS (Health), FCPS (Medicine), MD (Cardiology), CCD (BIRDEM)",
         "work_place" : "Kurmitola General Hospital, Dhaka",
-        "rating": 3
+        "rating": 3,
+        "working_hour" : "6-8 Pm",
+        "First_fee": 900,
+        "fee": 500
         
     },
     {
@@ -52,7 +65,10 @@
         "speciality": "Medicine Specialist",
         "degree": "MBBS, FCPS (Medicine)",
         "work_place" : "Uttara Adhunik Medical College & Hospital",
-        "rating": 3.7
+        "rating": 3.7,
+        "working_hour" : "4-8 Pm",
+        "First_fee": 1200,
+        "fee": 700
         
     },
     {
@@ -61,7 +77,10 @@
         "speciality": "Medicine Specialist",
         "degree": "MBBS, FCPS (Medicine)",
         "work_place" : "Uttara Adhunik Medical College & Hospital",
-        "rating": 3.7
+        "rating": 3.7,
+        "working_hour" : "5-8 Pm",
+        "First_fee": 500,
+        "fee": 400
         
     },
     {
@@ -70,7 +89,10 @@
         "speciality": "Internal, Medicine & Diabetes Specialist",
         "degree": "MBBS, FCPS (Medicine), Md. (Internal Medicine), DEM (Birdem)",
         "work_place" : "Dhaka Medical College & Hospital",
-        "rating": 3.7
+        "rating": 3.7,
+        "working_hour" : "2-4 Pm",
+        "First_fee": 800,
+        "fee": 600
         
     },
     {
@@ -79,7 +101,10 @@
         "speciality": "Medicine Specialist",
         "degree": "MBBS, FCPS (Medicine), FRCP (EDIN), FRCP (Glasgow)",
         "work_place" : "Uttara Adhunik Medical College & Hospital",
-        "rating": 5
+        "rating": 5,
+        "working_hour" : "5-8 Pm",
+        "First_fee": 500,
+        "fee": 400
         
     },
     {
@@ -88,7 +113,10 @@
         "speciality": "Medicine (All Diseases of Adults) Specialist",
         "degree": "MBBS (DMC), MRCP (UK)",
         "work_place" : "Evercare Hospital, Dhaka",
-        "rating": 3
+        "rating": 3,
+        "working_hour" : "4-7 Pm",
+        "First_fee": 1200,
+        "fee": 700
         
     },
     {
@@ -97,7 +125,10 @@
         "speciality": "Rheumatology & Medicine Specialist",
         "degree": "MBBS, FCPS (Medicine), MRCP (UK), MD (Rheumatology)",
         "work_place" : "Square Hospital, Dhaka",
-        "rating": 2.8       
+        "rating": 2.8,
+        "working_hour" : "4-6 Pm",
+        "First_fee": 400,
+        "fee": 300       
     },
     {
         "name": "Dr. Mohammad Safayet Kamal",
@@ -105,7 +136,9 @@
         "speciality": "Medicine Specialist",
         "degree": "MBBS, BCS (Health), FCPS (Medicine), MACP (USA)",
         "work_place" : "National Institute of Neurosciences & Hospital",
-        "rating": 4.5
-        
+        "rating": 4.5,
+        "working_hour" : "10-4 Pm",
+        "First_fee": 1000,
+        "fee": 700      
     }
 ]

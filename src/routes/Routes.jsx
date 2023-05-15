@@ -8,6 +8,7 @@ import AddDiseases from "../pages/Shared/AddServices/AddServices";
 import AddServices from "../pages/Shared/AddServices/AddServices";
 import EditServices from "../pages/Shared/EditServices/EditServices";
 import ServiceDetails from "../pages/Shared/ServiceDetails/ServiceDetails";
+import DoctorsDetails from "../pages/Shared/Doctors/DoctorsDetails";
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: '/servicesDetails/:id',
         element: <ServiceDetails></ServiceDetails>
+      },
+      {
+        path: '/doctorsDetails/:id',
+        element: <DoctorsDetails></DoctorsDetails>
       }
     ]
   },

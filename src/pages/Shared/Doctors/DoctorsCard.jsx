@@ -26,7 +26,7 @@ const DoctorsCard = ({ doctor }) => {
 
                     <div className="card-actions flex justify-between items-center">
                         <span className='font-bold cursor-pointer  text-[#09c3d0]'>
-                            <Link className='flex items-center' to={`/servicesDetails/${_id}`}>
+                            <Link className='flex items-center' to={`/doctorsDetails/${_id}`}>
                                 See Details
                                 <FaArrowRight className='ml-2 -mb-1'></FaArrowRight>
                             </Link>
