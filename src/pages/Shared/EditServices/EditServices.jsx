@@ -15,7 +15,6 @@ const EditServices = () => {
         })
     
     } ,[])
-    // console.log(service);
 
     const handleUpdateService = event => {
         event.preventDefault();
@@ -24,6 +23,22 @@ const EditServices = () => {
         const photo = form.photo.value;
         const details = form.details.value;
         const newServices = { name, photo, details };
+        
+
+        fetch(`http://localhost:5000/updateService/${id}`,{
+            method: "PUT",
+            headers: {
+                "content-type" : "application/json"
+            },
+            body: JSON.stringify(newServices)
+        })
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data)
+            if(data.modifiedCount > 0){
+                alert('updated successfully')
+            }
+        })
     }
 
 
