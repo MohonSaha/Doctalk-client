@@ -7,7 +7,7 @@ const DashBoard = () => {
             <div>
                 <h2 className='my-6 font-semibold'>Doctor's Manager</h2>
                 <ul>
-                    <li><button className='btn text-white bg-[#017f7f] border-[#017f7f]'><Link className='text-2xl' to='/admin/dashboard/UpdateDoctor'>Update Doctor</Link></button></li>
+                    <li><button className='btn text-white bg-[#017f7f] border-[#017f7f]'><Link className='text-2xl' to='/admin/dashboard/ManageDoctor'>Manage Doctor</Link></button></li>
                 </ul>
             </div>
         </div>

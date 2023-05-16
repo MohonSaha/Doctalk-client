@@ -11,8 +11,8 @@ import ServiceDetails from "../pages/Shared/ServiceDetails/ServiceDetails";
 import DoctorsDetails from "../pages/Shared/Doctors/DoctorsDetails";
 import AddDoctors from "../pages/Shared/AddDoctors/AddDoctors";
 import AdminDashboardLayout from "../layout/AdminDashboardLayout";
-import UpdateDoctor from "../pages/AdminDashboard/UpdateDoctor/UpdateDoctor";
 import DashBoard from "../pages/AdminDashboard/DashBoard/DashBoard";
+import ManageDoctor from "../pages/AdminDashboard/ManageDoctor/ManageDoctor";
 
 
 const router = createBrowserRouter([
@@ -75,8 +75,8 @@ const router = createBrowserRouter([
       //   element: <UploadService/>
       // },
       {
-        path: '/admin/dashboard/UpdateDoctor',
-        element: <UpdateDoctor/>
+        path: '/admin/dashboard/ManageDoctor',
+        element: <ManageDoctor/>
       },
       // {
       //   path: '/admin/dashboard/manageService',
