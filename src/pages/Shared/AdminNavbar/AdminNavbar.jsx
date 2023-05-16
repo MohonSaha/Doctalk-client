@@ -5,35 +5,22 @@ import { useContext } from "react";
 import { authContext } from "../../../providers/AuthProviders";
 
 
-const Navbar = () => {
+const AdminNavbar = () => {
 
-    const { user, logOut } = useContext(authContext);
+    // const { user, logOut } = useContext(authContext);
 
-    const handleLogOut = () => {
-        logOut()
-            .then(() => { })
-            .catch(error => console.log(error))
-    }
+    // const handleLogOut = () => {
+    //     logOut()
+    //         .then(() => { })
+    //         .catch(error => console.log(error))
+    // }
 
 
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/about'>Services</Link></li>
+        <li><button>Log out</button></li>
+        <li><Link to='/login'>Login</Link></li>
 
-        {
-            user?.email ? <>
-                <li><Link to='/appoinment'>My Appoinment</Link></li>
-                <li>
-                    <Link to="/admin/dashboard" className="nav-link" href="#">
-                        DashBoard
-                    </Link>
-                </li>
-                <li><button onClick={handleLogOut}>Log out</button></li>
-
-            </>
-                :
-                <li><Link to='/login'>Login</Link></li>
-        }
 
     </>
 
@@ -72,4 +59,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default AdminNavbar;
