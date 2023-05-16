@@ -9,6 +9,7 @@ import AddServices from "../pages/Shared/AddServices/AddServices";
 import EditServices from "../pages/Shared/EditServices/EditServices";
 import ServiceDetails from "../pages/Shared/ServiceDetails/ServiceDetails";
 import DoctorsDetails from "../pages/Shared/Doctors/DoctorsDetails";
+import AddDoctors from "../pages/Shared/AddDoctors/AddDoctors";
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         element: <AddServices></AddServices>
       },
       {
+        path: '/addDoctors',
+        element: <AddDoctors></AddDoctors>
+      },
+      {
         path: '/services/:id',
         element: <EditServices></EditServices>
       },
@@ -50,6 +55,33 @@ const router = createBrowserRouter([
       }
     ]
   },
+  // {
+  //   path: '/admin/dashboard',
+  //   element: <adminDashboardLayout/>,
+  //   children: [
+  //     {
+  //       path: '/admin/dashboard',
+  //       element: <Dashboard/>
+  //     },
+  //     {
+  //       path: '/admin/dashboard/addDoctor',
+  //       element: <UploadDoctor/>
+  //     },
+  //     {
+  //       path: '/admin/dashboard/AddService',
+  //       element: <UploadService/>
+  //     },
+  //     {
+  //       path: '/admin/dashboard/EditService',
+  //       element: <EditService/>
+  //     },
+  //     {
+  //       path: '/admin/dashboard/manageService',
+  //       element: <ManageService/>
+  //     },
+
+  //   ]
+  // }
 ]);
 
 

@@ -3,6 +3,7 @@ import { FaArrowRight, FaHeart, FaPlus } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import DoctorsCard from './DoctorsCard';
 import { authContext } from '../../../providers/AuthProviders';
+import { stateContext } from '../../../providers/StateChange';
 
 const Doctors = () => {
 
@@ -14,6 +15,8 @@ const Doctors = () => {
     const [doctorPerPage, setDoctorPerPage] = useState(4);
     const totalPages = Math.ceil(totalDoctors / doctorPerPage);
     const pageNumbers = [...Array(totalPages).keys()]
+
+    const {control, setControl} = useContext(stateContext);
    
 
 
@@ -47,7 +50,7 @@ const Doctors = () => {
             setDoctors(data)
         }
         fetchData()
-    } , [currentPage, doctorPerPage])
+    } , [currentPage, doctorPerPage, control])
 
 
 
@@ -68,12 +71,11 @@ const Doctors = () => {
 
                 <div className='flex justify-between mx-6 md:mx-28 mb-6'>
 
-                    <p className=' text-[#017f7f] font-semibold  cursor-pointer'><Link className='flex items-center' to='/addDiseases'>Add Doctors <FaPlus className='ml-3'></FaPlus></Link></p>
+                    <p className=' text-[#017f7f] font-semibold  cursor-pointer'><Link className='flex items-center' to='/addDoctors'>Add Doctors <FaPlus className='ml-3'></FaPlus></Link></p>
 
                    { user ?  <p className=' text-[#017f7f] font-semibold  cursor-pointer'><Link className='flex items-center' to='/addDiseases'>Fevourite List<FaHeart className='ml-3'></FaHeart></Link></p> : ''}
-
-
                 </div>
+
 
                 <div className="grid md:grid-cols-2 gap-8 grid-cols-1 mx-6 md:mx-28">
                     {
@@ -83,6 +85,7 @@ const Doctors = () => {
                         ></DoctorsCard>)
                     }
                 </div>
+
 
 
 

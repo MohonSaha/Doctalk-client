@@ -39,7 +39,7 @@ const DoctorsDetails = () => {
             <div className=' h-[calc(85vh-20px)] overflow-y-scroll px-8'>
 
                 <div>
-                    <div className="card w-full bg-base-300 shadow-xl">
+                    <div className="card w-full bg-base-300">
                         <figure className="px-4 pt-10">
                             <h2 className='text-2xl font-semibold'>About {name}</h2>
                         </figure>
