@@ -18,14 +18,14 @@ const Navbar = () => {
 
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/about'>Services</Link></li>
+        <li><Link to='/appoinment'>Services</Link></li>
 
         {
             user?.email ? <>
                 <li><Link to='/appoinment'>My Appoinment</Link></li>
                 <li>
                     <Link to="/admin/dashboard" className="nav-link" href="#">
-                        DashBoard
+                        Dashboard
                     </Link>
                 </li>
                 <li><button onClick={handleLogOut}>Log out</button></li>

@@ -13,6 +13,7 @@ import AddDoctors from "../pages/Shared/AddDoctors/AddDoctors";
 import AdminDashboardLayout from "../layout/AdminDashboardLayout";
 import DashBoard from "../pages/AdminDashboard/DashBoard/DashBoard";
 import ManageDoctor from "../pages/AdminDashboard/ManageDoctor/ManageDoctor";
+import EditDoctor from "../pages/AdminDashboard/EditDoctor/EditDoctor";
 
 
 const router = createBrowserRouter([
@@ -78,10 +79,10 @@ const router = createBrowserRouter([
         path: '/admin/dashboard/ManageDoctor',
         element: <ManageDoctor/>
       },
-      // {
-      //   path: '/admin/dashboard/manageService',
-      //   element: <ManageService/>
-      // },
+      {
+        path: '/admin/dashboard/EditDoctor/:id',
+        element: <EditDoctor/>
+      },
 
     ]
   }

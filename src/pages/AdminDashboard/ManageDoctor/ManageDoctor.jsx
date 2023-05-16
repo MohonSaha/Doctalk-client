@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { stateContext } from '../../../providers/StateChange';
+import { Link } from 'react-router-dom';
 
 const ManageDoctor = () => {
 
@@ -48,7 +49,7 @@ const ManageDoctor = () => {
                             <p>{doctor.degree}</p>
                             <p className='text-red-600'>{doctor.speciality}</p>
                             <div className="card-actions justify-end">
-                                <button className="btn bg-[#017f7f] border-[#017f7f] text-white">Update</button>
+                                <button className="btn bg-[#017f7f] border-[#017f7f] text-white"><Link to={`/admin/dashboard/EditDoctor/${doctor._id}`}>Update</Link></button>
                                 <button onClick={() => handleDelete(doctor._id)} className="btn bg-red-500 border-red-500 text-white">Delete</button>
                             </div>
                             <p>Serial No: {i + 1}</p>
